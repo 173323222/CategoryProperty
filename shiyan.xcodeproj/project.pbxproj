@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17636CE020874D0300A8124E /* NSObject+Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17636CDF20874D0300A8124E /* NSObject+Person.m */; };
 		17F75BC11F4691D3009692C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F75BC01F4691D3009692C5 /* main.m */; };
 		17F75BC41F4691D3009692C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F75BC31F4691D3009692C5 /* AppDelegate.m */; };
 		17F75BC71F4691D3009692C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F75BC61F4691D3009692C5 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17636CDE20874D0300A8124E /* NSObject+Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Person.h"; sourceTree = "<group>"; };
+		17636CDF20874D0300A8124E /* NSObject+Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Person.m"; sourceTree = "<group>"; };
 		17F75BBC1F4691D3009692C5 /* shiyan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shiyan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F75BC01F4691D3009692C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17F75BC21F4691D3009692C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				17F75BC31F4691D3009692C5 /* AppDelegate.m */,
 				17F75BC51F4691D3009692C5 /* ViewController.h */,
 				17F75BC61F4691D3009692C5 /* ViewController.m */,
+				17636CDE20874D0300A8124E /* NSObject+Person.h */,
+				17636CDF20874D0300A8124E /* NSObject+Person.m */,
 				17F75BC81F4691D3009692C5 /* Main.storyboard */,
 				17F75BCB1F4691D3009692C5 /* Assets.xcassets */,
 				17F75BCD1F4691D3009692C5 /* LaunchScreen.storyboard */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					17F75BBB1F4691D3009692C5 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5WC6EJS5UC;
 						ProvisioningStyle = Automatic;
 					};
 					17F75BD41F4691D3009692C5 = {
@@ -275,6 +281,7 @@
 			files = (
 				17F75BC71F4691D3009692C5 /* ViewController.m in Sources */,
 				17F75BC41F4691D3009692C5 /* AppDelegate.m in Sources */,
+				17636CE020874D0300A8124E /* NSObject+Person.m in Sources */,
 				17F75BC11F4691D3009692C5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,9 +433,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5WC6EJS5UC;
 				INFOPLIST_FILE = shiyan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = liuhongwei.shiyan;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/shiyan",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liuhongwei.shiyanlym;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -437,9 +451,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5WC6EJS5UC;
 				INFOPLIST_FILE = shiyan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = liuhongwei.shiyan;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/shiyan",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liuhongwei.shiyanlym;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -509,6 +530,7 @@
 				17F75BEB1F4691D3009692C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17F75BEC1F4691D3009692C5 /* Build configuration list for PBXNativeTarget "shiyanTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +539,7 @@
 				17F75BEE1F4691D3009692C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17F75BEF1F4691D3009692C5 /* Build configuration list for PBXNativeTarget "shiyanUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +548,7 @@
 				17F75BF11F4691D3009692C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+Person.h"
+
 
 @interface ViewController ()
 
@@ -14,10 +16,15 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSObject *objc = [[NSObject alloc] init];
+    objc.name = @"almost";
+    NSLog(@"%@", objc.name);
+    NSLog(@"-.-");
 }
+
 
 
 - (void)didReceiveMemoryWarning {
